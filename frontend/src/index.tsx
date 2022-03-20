@@ -13,6 +13,7 @@ import Route from '@components/routing/Route';
 
 import './styles/index.scss';
 
+//@ts-ignore
 const client = new ApolloClient({
     uri: 'http://localhost:4000/graphql',
     cache: new InMemoryCache()
