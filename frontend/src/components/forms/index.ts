@@ -10,4 +10,4 @@ export {
     Select,
     TextField,
     Pagination
-}
+};

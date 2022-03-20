@@ -89,7 +89,7 @@ const StyledCard = styled.div<Partial<PokemonCardProps>>`
     }
 `;
 
-const PokemonCard: React.FC<PokemonCardProps> = ({ className = '', view = PokemonsView.Detail, detailView = false, hideFavoriteOrUnfavoriteOption = false, pokemon, onFavorite=noop, onUnFavorite=noop }) => {
+const PokemonCard: React.FC<PokemonCardProps> = ({ className = '', view = PokemonsView.Detail, detailView = false, hideFavoriteOrUnfavoriteOption = false, pokemon, onFavorite = noop, onUnFavorite = noop }) => {
     const history = useHistory();
 
     const playSound = (): void => {

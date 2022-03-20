@@ -17,7 +17,7 @@ const mocks = [
             }
         })
     }
-]
+];
 
 describe('PokemonFilterMenu Component', () => {
     let component: RenderResult;

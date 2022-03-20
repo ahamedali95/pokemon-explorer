@@ -4,4 +4,4 @@ export {
     pokemons,
     pokemonTypes,
     pokemonByName
-}
+};

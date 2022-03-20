@@ -6,4 +6,4 @@ export {
     usePokemonFilter,
     useToastNotification,
     usePagination
-}
+};

@@ -29,4 +29,4 @@
 //
 // export default createTheme(theme);
 
-export {}
+export {};

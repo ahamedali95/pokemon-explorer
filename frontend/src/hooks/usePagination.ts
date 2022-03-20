@@ -2,7 +2,7 @@ import {useMemo, useState} from 'react';
 
 const usePagination = (recordsCount = 0, recordsPerPage = -1) => {
     const [currentPage, setCurrentPage] = useState(recordsCount ? 1 : 0);
-    const totalPages = Math.ceil(recordsCount/recordsPerPage);
+    const totalPages = Math.ceil(recordsCount / recordsPerPage);
 
     const buttonsStatus = useMemo(() => {
         return {

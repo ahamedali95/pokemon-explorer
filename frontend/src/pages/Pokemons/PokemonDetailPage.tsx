@@ -42,11 +42,11 @@ const PokemonDetailPage: React.FC = () => {
     }, [pokemonFavoriteData, pokemonUnFavoriteData]);
 
     const handlePokemonFavorite = useCallback((id: string): void => {
-        makePokemonFavorite({ variables: { id } })
+        makePokemonFavorite({ variables: { id } });
     }, [makePokemonFavorite]);
 
     const handleUnFavoritePokemon = useCallback((id: string): void => {
-        makePokemonUnFavorite({ variables: { id } })
+        makePokemonUnFavorite({ variables: { id } });
     }, [makePokemonUnFavorite]);
 
     return (
@@ -70,7 +70,7 @@ const PokemonDetailPage: React.FC = () => {
                                             {
                                                 data.pokemonByName.evolutions.map((pokemon: Pokemon): JSX.Element => {
                                                     return (
-                                                        <div key={pokemon.id+'_'+pokemon.name}>
+                                                        <div key={pokemon.id + '_' + pokemon.name}>
                                                             <PokemonCard
                                                                 pokemon={pokemon}
                                                                 hideFavoriteOrUnfavoriteOption
@@ -95,7 +95,7 @@ const PokemonDetailPage: React.FC = () => {
                 visible={visible}
             />
         </RootContainer>
-    )
+    );
 };
 
 export default PokemonDetailPage;

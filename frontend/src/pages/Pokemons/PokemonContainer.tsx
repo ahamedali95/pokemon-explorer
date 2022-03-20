@@ -74,11 +74,11 @@ const PokemonContainer: React.FC<PokemonContainerProps> = ({ filterData, view })
     }, [currentPage]);
 
     const handlePokemonFavorite = useCallback((id: string): void => {
-        makePokemonFavorite({ variables: { id } })
+        makePokemonFavorite({ variables: { id } });
     }, [makePokemonFavorite]);
 
     const handleUnFavoritePokemon = useCallback((id: string): void => {
-        makePokemonUnFavorite({ variables: { id } })
+        makePokemonUnFavorite({ variables: { id } });
     }, [makePokemonUnFavorite]);
 
     return (
@@ -94,7 +94,7 @@ const PokemonContainer: React.FC<PokemonContainerProps> = ({ filterData, view })
                         return (
                             <div
                                 className={view === PokemonsView.List ? 'span-width' : ''}
-                                key={pokemon.id+'_'+pokemon.name}
+                                key={pokemon.id + '_' + pokemon.name}
                             >
                                 <PokemonCard
                                     onFavorite={handlePokemonFavorite}

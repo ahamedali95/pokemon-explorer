@@ -18,7 +18,7 @@ const PokemonsPage: React.FC = () => {
     const [ filterData, dispatch ] = usePokemonFilter();
     const [ pokemonsView, setPokemonsView ] = useState(PokemonsView.Detail);
     const handleChange = useCallback((property: keyof PokemonFilter, value: any): void => {
-        dispatch({ type: 'UPDATE_PROPERTY', property, value })
+        dispatch({ type: 'UPDATE_PROPERTY', property, value });
     }, [dispatch]);
 
     const handleViewChange = useCallback((viewType: PokemonsView) => {

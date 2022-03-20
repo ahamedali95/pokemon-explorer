@@ -16,7 +16,7 @@ const initialState: PokemonFilter = {
 
 export const pokemonFilterReducer = (state: PokemonFilter, action: Action) => {
     switch (action.type) {
-    case('UPDATE_PROPERTY'): {
+    case ('UPDATE_PROPERTY'): {
         const $action = action as ActionWithPayload;
 
         return {
@@ -37,7 +37,7 @@ const usePokemonFilter = (): [PokemonFilter, Dispatch<Action>] => {
     return [
         state,
         dispatch
-    ]
+    ];
 };
 
 export default usePokemonFilter;

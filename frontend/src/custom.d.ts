@@ -27,11 +27,11 @@ declare module '@components/forms' {
     import { SelectProps } from '@components/forms/TextField';
     import { FlexContainerProps } from '@components/forms/FlexContainer';
 
-    const Button: React.FC<ButtonProps>;
-    const TextField: React.FC<TextFieldProps>;
-    const Select: React.FC<SelectProps>;
-    const FlexContainer: React.FC<FlexContainerProps>;
-    const Pagination: React.FC;
+    const Button: React.FC<ButtonProps>,
+        TextField: React.FC<TextFieldProps>,
+        Select: React.FC<SelectProps>,
+        FlexContainer: React.FC<FlexContainerProps>,
+        Pagination: React.FC;
 
     export { Button, TextField, Select, FlexContainer, Pagination };
 }
@@ -52,18 +52,18 @@ declare module '@components/routing/Route' {
 }
 
 declare module '@hooks' {
-    const usePokemonFilter: CallableFunction;
-    const useToastNotification: CallableFunction;
-    const usePagination: CallableFunction;
+    const usePokemonFilter: CallableFunction,
+        useToastNotification: CallableFunction,
+        usePagination: CallableFunction;
 
     export { usePokemonFilter, useToastNotification, usePagination };
 }
 
 declare module '@api/queries' {
     import { DocumentNode } from 'graphql/language/ast';
-    const pokemons: DocumentNode;
-    const pokemonTypes: DocumentNode;
-    const pokemonByName: DocumentNode;
+    const pokemons: DocumentNode,
+        pokemonTypes: DocumentNode,
+        pokemonByName: DocumentNode;
 
     export { pokemons, pokemonTypes, pokemonByName };
 }
@@ -71,8 +71,8 @@ declare module '@api/queries' {
 
 declare module '@api/mutations' {
     import { DocumentNode } from 'graphql/language/ast';
-    const favoritePokemon: DocumentNode;
-    const unFavoritePokemon: DocumentNode;
+    const favoritePokemon: DocumentNode,
+        unFavoritePokemon: DocumentNode;
 
     export { favoritePokemon, unFavoritePokemon };
 }

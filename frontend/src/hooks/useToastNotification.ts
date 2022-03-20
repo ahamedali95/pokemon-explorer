@@ -25,7 +25,7 @@ const useToastNotification = () => {
         visible,
         content,
         kind
-    }
+    };
 };
 
 export default useToastNotification;

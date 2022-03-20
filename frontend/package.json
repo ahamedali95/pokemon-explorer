@@ -20,6 +20,12 @@
     "build:dev": "webpack --config config/webpack.dev.js",
     "build:prod": "webpack --config config/webpack.prod.js"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint && npm run check:typings",
+      "pre-push": "npm test"
+    }
+  },
   "dependencies": {
     "@apollo/client": "^3.5.10",
     "@apollo/react-hooks": "^4.0.0",
@@ -62,7 +68,7 @@
     "eslint-plugin-react-hooks": "^4.2.0",
     "html-loader": "^2.1.2",
     "html-webpack-plugin": "^5.3.2",
-    "husky": "^4.3.8",
+    "husky": "^3.1.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^27.0.6",
     "jest-chain": "^1.1.5",
