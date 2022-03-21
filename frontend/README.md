@@ -1,4 +1,4 @@
-**Pokemon Frontend Application**
+**Pokemon Explorer Frontend Application**
 
 First of all, I want to thank you guys for providing the opportunity to build this application. Even though the scope of the application is small, 
 I thoroughly enjoyed building this application. It allowed me to explore new ideas, solutions, tools and technologies that 
