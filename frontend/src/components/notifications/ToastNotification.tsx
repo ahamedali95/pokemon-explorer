@@ -18,7 +18,7 @@ const StyledToastNotification = styled.div<Partial<ToastNotificationProps>>`
     visibility: ${props => props.visible ? 'visible' : 'hidden'};
     font-weight: 400;
     font-size: 20px;
-    line-height: 10px;
+    line-height: 20px;
     color: white;
     min-width: 100px;
     padding: 16px;
