@@ -8,11 +8,14 @@ The client-side application is a single-page application built using React and o
 React. These tools are:
 
 1. React - library to build UI components.
-3. TypeScript - programming language the extends JS and offers a vast typed ecosystem and OOP features.
+2. TypeScript - programming language the extends JS and offers a vast typed ecosystem and core OOP features.
+3. Babel - transpiler to convert JSX and latest version of JS in to vanilla JS that browser can understand. Also makes it possible to use
+ECMAScript TC-39 stage-4 experimental features.
 4. Webpack - module bundler that takes pieces of JS and its dependencies and bundles them in to a single deployable artifact, thus
- allowing us to build single page applications.
-5. Jest - unit testing framework for modern JS applications.
-6. React testing library - companion testing library of Jest to make it easier to test React components from the perspective of the user.
+ making it possible to build single page applications.
+5. Jest - unit testing framework for modern JS applications that offers wide-range of features such as mocking, coverage, test runner,
+assertion library and integration with other core tools.
+6. React testing library - companion JSDOM-based testing library of Jest to make it easier to test React components from the perspective of the user.
 7. ESLint - static analysis tool for JS applications.
 
 Note: Project follows typical unopinionated folder structure that grouped files based on features, rather than types. Some
